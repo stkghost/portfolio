@@ -1,5 +1,4 @@
-import { CgInstagram } from 'react-icons/cg'
-import { FaWhatsapp } from 'react-icons/fa'
+import { FaGithub, FaWhatsapp } from 'react-icons/fa'
 import { RiLinkedinLine } from 'react-icons/ri'
 import styled from 'styled-components'
 
@@ -32,6 +31,10 @@ export const Content = styled.div`
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
 `
 
 export const ImageContainer = styled.div`
@@ -45,6 +48,10 @@ export const ImageContainer = styled.div`
   background: #efefef;
   box-shadow:  7px 7px 8px #606060,
              -7px -7px 8px #ffffff;
+
+  @media (max-width: 768px) {
+    margin-bottom: 3rem;
+  }
 `
 
 export const Image = styled.img`
@@ -85,10 +92,10 @@ export const LinkdnIcon = styled(RiLinkedinLine)`
   }
 `
 
-export const InstaIcon = styled(CgInstagram)`
+export const InstaIcon = styled(FaGithub)`
   height: 20px;
   width: 20px;
-  color: #517fa4;
+  color: #6e5494;
   cursor: pointer;
 
 
@@ -102,6 +109,7 @@ export const InstaIcon = styled(CgInstagram)`
 export const InfoContainer = styled.div`
   height: 250px;
   width: 50%;
+  max-width: 880px;
   display: flex;
   flex-direction: column;
   align-items: center;
