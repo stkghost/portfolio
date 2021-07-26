@@ -1,4 +1,4 @@
-import gitCat from "../../assets/gitCat.gif";
+import gitCat from "../../assets/Octocat.png";
 import * as S from "./styles";
 
 export const Header = () => {
@@ -6,7 +6,19 @@ export const Header = () => {
     <S.Container>
       <S.Gif src={gitCat} alt="github" />
       <S.Title>Gabriel R. Souza</S.Title>
-      <S.Subtitle>WEB/MOBILE DEVELOPER</S.Subtitle>
+
+      <S.Subtitle
+        steps={[
+          'JAVASCRIPT', 2000,
+          'REACT JS', 2000,
+          'HTML', 2000,
+          'CSS', 2000,
+          'TYPESCRIPT', 2000,
+          'REACT NATIVE', 2000,
+        ]}
+        loop={Infinity}
+        wrapper="p"
+      />
     </S.Container>
   );
 };

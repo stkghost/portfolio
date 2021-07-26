@@ -1,14 +1,32 @@
+import { useEffect, useState } from 'react';
 import Me from "../../assets/me.jpeg";
 import * as S from "./styles";
 
 export const About = () => {
+
+  const [isShowing, setIsShowing] = useState(false);
+
+  useEffect(() => {
+    const intersectionObserver = new IntersectionObserver((entries) => {
+      if (entries.some((entry) => entry.isIntersecting)) {
+        setIsShowing(true)
+      }
+
+    })
+
+    intersectionObserver.observe(document.querySelector('#container'))
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  },[])
+
+
+
   return (
     <S.Container>
       <S.Header>
         <S.Title>About me</S.Title>
       </S.Header>
       <S.Content>
-        <S.ImageContainer>
+        <S.ImageContainer id="container" isShowing={isShowing}>
           <S.Image src={Me} alt="me" />
           <S.IconsContainer>
             <a href="https://api.whatsapp.com/send?phone=+5547999722189">
@@ -23,7 +41,7 @@ export const About = () => {
           </S.IconsContainer>
         </S.ImageContainer>
 
-        <S.InfoContainer>
+        <S.InfoContainer id="container" isShowing={isShowing}>
           <S.InfoHeader>
             <S.InfoTitle>Hi!</S.InfoTitle>
             <S.InfoDescription>

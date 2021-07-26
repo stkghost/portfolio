@@ -32,4 +32,5 @@ export const Icon = styled.div`
 export const SkillName = styled.p`
   margin-top: 1rem;
   color: #999999;
+  text-align: center;
 `

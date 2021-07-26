@@ -1,7 +1,7 @@
 import * as S from "./styles";
 
 export const SkillCard = ({ data }) => {
-  console.log(data);
+
   return (
     <>
       {data.map((skill) => (

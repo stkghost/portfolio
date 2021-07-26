@@ -1,7 +1,9 @@
 import { About } from './components/About';
+import { Experience } from './components/Experience';
 import { Header } from './components/Header';
 import { SkillsContainer } from './components/SkillsContainer';
 import './global.css';
+
 
 function App() {
   return (
@@ -9,6 +11,7 @@ function App() {
       <Header />
       <About />
       <SkillsContainer />
+      <Experience />
     </>
   );
 }

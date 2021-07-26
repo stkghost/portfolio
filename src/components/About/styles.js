@@ -1,6 +1,17 @@
 import { FaGithub, FaWhatsapp } from 'react-icons/fa'
 import { RiLinkedinLine } from 'react-icons/ri'
-import styled from 'styled-components'
+import styled, { keyframes } from 'styled-components'
+
+
+const cardAnimation = keyframes`
+  0% {
+    opacity: 0.2;
+    transform: translateX(-400px)
+  }
+  100% {
+    opacity: 1;
+  }
+`
 
 
 
@@ -47,7 +58,11 @@ export const ImageContainer = styled.div`
   border: 1px solid #eeeeee;
   background: #efefef;
   box-shadow:  7px 7px 8px #606060,
-             -7px -7px 8px #ffffff;
+  -7px -7px 8px #ffffff;
+  animation: ${({ isShowing }) => isShowing ? cardAnimation : ''};
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+
 
   @media (max-width: 768px) {
     margin-bottom: 3rem;
@@ -118,7 +133,12 @@ export const InfoContainer = styled.div`
   box-shadow:  7px 7px 8px #606060,
              -7px -7px 8px #ffffff;
   padding: 20px;
+  animation: ${({ isShowing }) => isShowing ? cardAnimation : ''};
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+
 `
+
 
 export const InfoHeader = styled.div`
     margin-bottom: 20px;

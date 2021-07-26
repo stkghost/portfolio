@@ -1,16 +1,26 @@
-import { DiHtml5, DiJavascript1 } from 'react-icons/di'
-import { SiCsswizardry, SiReact, SiTypescript } from 'react-icons/si'
+import { CgUserlane } from 'react-icons/cg'
+import { DiHtml5 } from 'react-icons/di'
+import { SiCsswizardry, SiJavascript, SiReact, SiTypescript } from 'react-icons/si'
 
 const skills = [
   {
     id: 'js',
     title: 'Javascript',
-    icon: <DiJavascript1 size={42} />,
+    icon: <SiJavascript size={42} />,
   },
-
+  {
+    id: 'ts',
+    title: 'Typescript',
+    icon: <SiTypescript size={42} />,
+  },
   {
     id: 'react',
-    title: 'ReactJs',
+    title: 'React Js',
+    icon: <SiReact size={42} />,
+  },
+  {
+    id: 'next',
+    title: 'Next Js',
     icon: <SiReact size={42} />,
   },
   {
@@ -29,10 +39,13 @@ const skills = [
     icon: <DiHtml5 size={42} />,
   },
   {
-    id: 'ts',
-    title: 'Typescript',
-    icon: <SiTypescript size={42} />,
+    id: 'user-experience',
+    title: 'User Experience',
+    icon: <CgUserlane size={42} />,
   },
+
+
+
 
 ]
 

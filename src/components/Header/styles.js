@@ -1,4 +1,6 @@
+import Typical from 'react-typical'
 import styled from 'styled-components'
+
 
 export const Container = styled.div`
   width: 100%;
@@ -6,16 +8,21 @@ export const Container = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: #1b0000;
+  background: #3e2723;
   height: 100vh;
 `
 
 export const GifContainer = styled.div``
 
 export const Gif = styled.img`
+  border-radius: 50%;
   height: 250px;
   width: 250px;
   margin-bottom: 20px;
+  object-fit: contain;
+  box-shadow: inset 0px -8px 5px rgba(255, 255, 255, 0.3),
+  -1px 2px 5px rgba(255, 255, 255, 0.3);
+              
 `
 
 export const Title = styled.p`
@@ -23,7 +30,7 @@ export const Title = styled.p`
   font-size: 2.5rem;
 `
 
-export const Subtitle = styled.p`
+export const Subtitle = styled(Typical)`
   color: #eeeeee;
   font-size: 1.8rem;
   font-weight: 100;
