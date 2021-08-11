@@ -9,6 +9,7 @@ export const Container = styled.div`
   align-items: center;
   justify-content: center;
   padding: 20px 100px;
+
 `;
 
 export const Title = styled.p`
@@ -26,15 +27,19 @@ export const TimeLineContainer = styled.div`
   padding-top: 3rem;
 `
 
-export const TimeLineComponent = styled(Timeline)`
-  padding: 20px;
-`
+export const TimeLineComponent = styled(Timeline)``
 
 export const TimeLineEventComponent = styled(TimelineEvent)`
   width: 500px;
   box-shadow:  7px 7px 8px #606060,
   -7px -7px 8px #eee;
   padding: 20px 10px;
+
+  @media (max-width: 768px) {
+    width: 280px;
+    padding: 10px;
+
+  }
 
 `
 
