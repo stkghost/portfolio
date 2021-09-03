@@ -4,7 +4,9 @@ import * as S from "./styles";
 export const Header = () => {
   return (
     <S.Container>
+      <a href="https://github.com/stkghost" target="_blank" rel="noreferrer">
       <S.Gif src={gitCat} alt="github" />
+      </a>
       <S.Title>Gabriel R. Souza</S.Title>
 
       <S.Subtitle

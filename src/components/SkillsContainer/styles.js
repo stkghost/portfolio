@@ -25,4 +25,7 @@ export const SkillsContainer = styled.div`
   width: 75%;
   max-width: 1120px;
   flex-wrap: wrap;
+  @media (max-width: 768px){
+    width: 90%;
+  }
 `

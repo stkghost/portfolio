@@ -25,7 +25,7 @@ const skillsUsed2 = [
 export const Experience = () => {
   return (
     <S.Container>
-      <S.Title>Experiência</S.Title>
+      <S.Title>Experience</S.Title>
       <S.TimeLineContainer>
 
         <S.TimeLineComponent
@@ -37,7 +37,7 @@ export const Experience = () => {
             iconColor="#999"
           >
             <S.Header>Macohin Gestão Processual - Balneário Camboriú - SC</S.Header>
-              <S.ContentTitle>Responsável pelas funções de técnico em informática e desenvolvedor web para escritório de advocacia.</S.ContentTitle>
+              <S.ContentTitle>IT and web developer.</S.ContentTitle>
             <S.LabelsContainer>
               {skillsUsed1.map((skill, index) => (
                 <S.Labels key={index}> {skill}</S.Labels>
@@ -55,7 +55,7 @@ export const Experience = () => {
             icon={<RiCodeSSlashLine />}
             iconColor="#999"
           >            <S.Header>DWV APP - Itampema - SC</S.Header>
-              <S.ContentTitle>Desenvolvedor web e mobile de telas e funcionalidades refente ao produto utilizado por corretores e construtoras.</S.ContentTitle>
+              <S.ContentTitle>Web and Mobile developer</S.ContentTitle>
               <S.LabelsContainer>
               {skillsUsed2.map((skill, index) => (
                 <S.Labels key={index}> {skill}</S.Labels>

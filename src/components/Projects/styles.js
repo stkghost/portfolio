@@ -23,15 +23,21 @@ export const ContentWrapper = styled.div`
   padding: 20px;
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 
 `
 
-export const Card = styled.div`
-  width: 300px;
-  height: 400px;
-  background: #fff;
+export const CardWrapper = styled.div`
   display: flex;
   flex-direction: column;
+  align-items: center;
+`
+
+export const Card = styled.div`
+  width: 250px;
+  height: 250px;
+  background-color: #fff;
+  display: flex;
   align-items: center;
   justify-content: center;
   margin: 0 1.5rem;
@@ -48,17 +54,19 @@ export const Card = styled.div`
 `
 
 export const Image = styled.img`
-  object-fit: cover;
+  object-fit: contain;
+  background: #292929;
   width: 100%;
-  height: 100%;
+  height: 230px;
 `
 
 export const Description = styled.a`
+  margin: 0.5rem 0;
   font-size: 0.9rem;
-  color: #333;
+  font-weight: 100;
+  color: #f9f9f9;
   text-align: center;
   text-decoration: none;
-  padding: 10px 0;
   :checked{
     text-decoration: none;
   }

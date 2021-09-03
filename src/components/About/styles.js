@@ -137,6 +137,10 @@ export const InfoContainer = styled.div`
   animation-duration: 2s;
   animation-fill-mode: forwards;
 
+  @media (max-width: 768px) {
+    width: 90%;
+  }
+
 `
 
 

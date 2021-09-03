@@ -45,12 +45,9 @@ export const About = () => {
           <S.InfoHeader>
             <S.InfoTitle>Hi!</S.InfoTitle>
             <S.InfoDescription>
-              👋 I'm Gabriel Souza. Fictional person for preview purposes I'm
-              working with newest front-end frameworks like Angular, React and
-              Vue. What you are seeing now is portfolio template from
-              Dorota1997. If you like this portfolio template, make sure to ⭐
-              the repository to make it more recognizable for other users. Thank
-              you
+              👋 I'm Gabriel Souza. Fictional person for preview purposes. I'm
+              working with newest front-end frameworks like React-Js, Next-Js, Angula and React-Native.
+             What you are seeing now is portfolio. I'm web and mobile developer growing up day after day and trying to be better then never 
             </S.InfoDescription>
           </S.InfoHeader>
         </S.InfoContainer>
